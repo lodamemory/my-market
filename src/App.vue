@@ -1,9 +1,18 @@
 <template>
-    <header>导航</header>
+    <header>{{header}}</header>
     <nav>菜单</nav>
     <article>内容</article>
     <footer>底部</footer>
 </template>
+<script>
+    export default{
+        data () {
+            return {
+                header: '导航1'
+            };
+        }
+    };
+</script>
 <style>
 header,nav,article,footer{
     border: solid 1px #666;
