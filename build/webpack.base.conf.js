@@ -44,6 +44,17 @@ module.exports = {
         test: /\.vue$/,
         loader: 'vue'
       },
+      { test: /\.css$/, 
+        loader: "style-loader!css-loader?root=./assets/" 
+      },
+      {
+        test: /\.less$/,
+        loader: "style!css!less"
+      },
+      {
+        test: /\.scss$/, 
+        loader: "style!css!sass"
+      },
       {
         test: /\.js$/,
         loader: 'babel',
